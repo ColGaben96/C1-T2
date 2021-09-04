@@ -36,6 +36,7 @@ public class EstudianteDTO implements Comparator<EstudianteDTO> {
 
     /**
      * Método constructor para definir los atributos
+     *
      * @param matricula
      * @param nombres
      * @param apellidos
@@ -50,6 +51,11 @@ public class EstudianteDTO implements Comparator<EstudianteDTO> {
         this.sexo = sexo;
         this.edad = edad;
         this.curso = curso;
+    }
+
+    @Override
+    public int compare(EstudianteDTO o1, EstudianteDTO o2) {
+        return o1.getCurso().compareTo(o2.getCurso());
     }
 
     public int getMatricula() {
@@ -98,10 +104,5 @@ public class EstudianteDTO implements Comparator<EstudianteDTO> {
 
     public void setCurso(String curso) {
         this.curso = curso;
-    }
-
-    @Override
-    public int compare(EstudianteDTO o1, EstudianteDTO o2) {
-        return o1.getCurso().compareTo(o2.getCurso());
     }
 }
