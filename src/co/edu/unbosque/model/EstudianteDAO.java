@@ -45,6 +45,7 @@ public class EstudianteDAO {
         for (EstudianteDTO busqueda : estudiantes) {
             if (busqueda.getCurso().contains(curso)) {
                 encontrados.add(busqueda);
+                encontrados.sort(busqueda);
             }
         }
         return encontrados;

@@ -1,12 +1,14 @@
 package co.edu.unbosque.model.persistence;
 
+import java.util.Comparator;
+
 /**
  * @author Gabriel Blanco
  * @version 1.0
  * <h1>Descripción</h1> <br>
  * Clase para definir un objeto de tipo Estudiante
  */
-public class EstudianteDTO {
+public class EstudianteDTO implements Comparator<EstudianteDTO> {
     /**
      * Atributo para definir el identificador de la matrícula
      */
@@ -96,5 +98,10 @@ public class EstudianteDTO {
 
     public void setCurso(String curso) {
         this.curso = curso;
+    }
+
+    @Override
+    public int compare(EstudianteDTO o1, EstudianteDTO o2) {
+        return o1.getCurso().compareTo(o2.getCurso());
     }
 }
