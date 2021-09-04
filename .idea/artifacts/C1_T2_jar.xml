@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="C1-T2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/C1_T2_jar</output-path>
+    <root id="archive" name="C1-T2.jar">
+      <element id="module-output" name="C1-T2" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-lang3-3.12.0/commons-lang3-3.12.0-tests.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-lang3-3.12.0/commons-lang3-3.12.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-logging-1.2/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jackcess-4.0.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

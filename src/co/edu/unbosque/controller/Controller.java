@@ -91,7 +91,7 @@ public class Controller {
         for (int i = 0; i < estudiantes.size(); i++) {
             System.out.println(estudiantes.get(i).getMatricula()+"\t"+estudiantes.get(i).getNombres()+" "
                     + estudiantes.get(i).getApellidos()+"\t"+estudiantes.get(i).getSexo()+"\t"
-                    + estudiantes.get(i).getCurso());
+                    +estudiantes.get(i).getEdad()+"\t"+ estudiantes.get(i).getCurso());
         }
     }
 
